@@ -752,7 +752,7 @@ const FestalLettersComplete = () => {
         syriacStatus: 'none', syriacDetail: '시리아어 미보존',
         copticStatus: 'none', copticDetail: '미발견',
         greekStatus: 'cosmas', greekDetail: '코스마스 인용문만 보존',
-        brakkeGwynn: 'pp. 299-300 (코스마스 인용만)', changes: 'moderate',
+        brakkeGwynn: 'p. 230', changes: 'moderate',
         changeType: '그리스어 인용 복원',
         changeDetail: '코스마스의 그리스어 인용만 보존.',
         npnfPage: 'NPNF2-04, Letter XLV (매우 제한적)',
@@ -933,9 +933,9 @@ const FestalLettersComplete = () => {
 
         {/* 현재 시기 정보 */}
         <div className={`rounded-lg shadow-md p-4 mb-6 ${selectedPeriod === 1 ? 'bg-blue-50 border-l-4 border-blue-500' :
-            selectedPeriod === 2 ? 'bg-amber-50 border-l-4 border-amber-500' :
-              selectedPeriod === 3 ? 'bg-green-50 border-l-4 border-green-500' :
-                'bg-purple-50 border-l-4 border-purple-500'
+          selectedPeriod === 2 ? 'bg-amber-50 border-l-4 border-amber-500' :
+            selectedPeriod === 3 ? 'bg-green-50 border-l-4 border-green-500' :
+              'bg-purple-50 border-l-4 border-purple-500'
           }`}>
           <div className="flex justify-between items-start">
             <div>
@@ -1062,10 +1062,10 @@ const FestalLettersComplete = () => {
                       key={letter.number + '-' + letter.year}
                       onClick={() => setSelectedLetter(letter.number)}
                       className={`w-full text-left p-2 rounded text-sm transition ${selectedLetter === letter.number ? 'bg-indigo-100 border border-indigo-400' :
-                          letter.reordered ? 'bg-red-50 border border-red-200' :
-                            letter.noLetter ? 'bg-gray-50 opacity-60' :
-                              letter.canonLetter ? 'bg-purple-50' :
-                                'bg-gray-50 hover:bg-gray-100'
+                        letter.reordered ? 'bg-red-50 border border-red-200' :
+                          letter.noLetter ? 'bg-gray-50 opacity-60' :
+                            letter.canonLetter ? 'bg-purple-50' :
+                              'bg-gray-50 hover:bg-gray-100'
                         }`}
                     >
                       <div className="flex justify-between items-center">
