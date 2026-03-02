@@ -16,7 +16,7 @@ const FestalLettersComplete = () => {
     // 제1기: "초기" (The Early Years) 328-335년
     1: [
       {
-        number: 1, year: 329, 
+        number: 1, year: 329,
         npnfNumber: 'I',
         bgNumber: 1,
         easterDate: '4월 15일 (xx Pharmuthi)',
@@ -78,7 +78,7 @@ const FestalLettersComplete = () => {
         peace: true
       },
       {
-        number: 4, year: 332, 
+        number: 4, year: 332,
         npnfNumber: 'IV (NPNF III)',
         bgNumber: 4,
         easterDate: '4월 11일', historicalContext: '초기 목회 사역.',
@@ -92,7 +92,7 @@ const FestalLettersComplete = () => {
         indexNote: '평화로운 해.', peace: true, reordered: false
       },
       {
-        number: 5, year: 333, 
+        number: 5, year: 333,
         npnfNumber: 'V (NPNF IV)',
         bgNumber: 5,
         easterDate: '4월 3일', historicalContext: '초기 목회 사역.',
@@ -106,7 +106,7 @@ const FestalLettersComplete = () => {
         indexNote: '평화로운 해.', peace: true, reordered: false
       },
       {
-        number: 6, year: 334, 
+        number: 6, year: 334,
         npnfNumber: 'VI (NPNF V)',
         bgNumber: 6,
         easterDate: '4월 23일', historicalContext: '튀로스 공의회(335년) 직전 해.',
@@ -120,7 +120,7 @@ const FestalLettersComplete = () => {
         indexNote: '평화로운 해.', peace: true, reordered: false
       },
       {
-        number: 7, year: 335, 
+        number: 7, year: 335,
         npnfNumber: 'VII (NPNF VI)',
         bgNumber: 7,
         easterDate: '4월 7일',
@@ -141,7 +141,7 @@ const FestalLettersComplete = () => {
     // 제2기: "동서 사이에서" (Between East and West) 335-346년
     2: [
       {
-        number: 8, year: 336, 
+        number: 8, year: 336,
         npnfNumber: 'VIII (색인만)',
         bgNumber: 8,
         easterDate: '3월 30일',
@@ -157,7 +157,7 @@ const FestalLettersComplete = () => {
         reordered: false
       },
       {
-        number: 9, year: 337, 
+        number: 9, year: 337,
         npnfNumber: 'IX (색인만)',
         bgNumber: 9,
         easterDate: '4월 19일',
@@ -174,7 +174,7 @@ const FestalLettersComplete = () => {
         reordered: false
       },
       {
-        number: 10, year: 338, 
+        number: 10, year: 338,
         npnfNumber: 'X (NPNF VII)',
         bgNumber: 10,
         easterDate: '3월 25일',
@@ -191,7 +191,7 @@ const FestalLettersComplete = () => {
         return: true, exileLetter: true, reordered: false
       },
       {
-        number: 11, year: 339, 
+        number: 11, year: 339,
         npnfNumber: 'XI (NPNF VIII)',
         bgNumber: 11,
         easterDate: '4월 13일',
@@ -208,7 +208,7 @@ const FestalLettersComplete = () => {
         exileStart: true, reordered: false
       },
       {
-        number: 12, year: 340, 
+        number: 12, year: 340,
         npnfNumber: 'XII (통지만)',
         bgNumber: 12,
         easterDate: '4월 5일', historicalContext: '두 번째 유배 (로마). 짧은 통지만 발송.',
@@ -223,7 +223,7 @@ const FestalLettersComplete = () => {
         reordered: false
       },
       {
-        number: 13, year: 341, 
+        number: 13, year: 341,
         npnfNumber: 'XIII (NPNF IX/X)',
         bgNumber: 13,
         easterDate: '3월 21일',
@@ -257,13 +257,13 @@ const FestalLettersComplete = () => {
         themes: ['신앙의 견고함', '그리스도인의 소망'],
         indexNote: '색인은 "편지 미발송"이라 하나 실제 편지는 존재.',
         critical: true, criticalNote: '★ 주요 재배열 #3: NPNF III(331년) → B&G 342년',
-        exile: true, exileNumber: 2, 
+        exile: true, exileNumber: 2,
         reordered: true,
         reorderInfo: { from: 331, to: 342, npnfLetter: 'III', direction: 'later', years: 11 },
         discrepancy: true
       },
       {
-        number: 15, year: 343, 
+        number: 15, year: 343,
         npnfNumber: 'XV (단편)',
         bgNumber: 15,
         easterDate: '3월 26일',
@@ -280,7 +280,7 @@ const FestalLettersComplete = () => {
         exile: true, exileNumber: 2, council: true, reordered: false
       },
       {
-        number: 16, year: 344, 
+        number: 16, year: 344,
         npnfNumber: 'XVI (단편)',
         bgNumber: 16,
         easterDate: '4월 14일', historicalContext: '두 번째 유배 계속. 니시에서.',
@@ -294,7 +294,7 @@ const FestalLettersComplete = () => {
         exile: true, exileNumber: 2, reordered: false
       },
       {
-        number: 17, year: 345, 
+        number: 17, year: 345,
         npnfNumber: 'XVII (NPNF XII)',
         bgNumber: 17,
         easterDate: '4월 6일',
@@ -310,7 +310,7 @@ const FestalLettersComplete = () => {
         exile: true, exileNumber: 2, reordered: false
       },
       {
-        number: 18, year: 346, 
+        number: 18, year: 346,
         npnfNumber: 'XVIII (NPNF XIII)',
         bgNumber: 18,
         easterDate: '3월 22일',
@@ -331,7 +331,7 @@ const FestalLettersComplete = () => {
     // 제3기: "황금 10년" (The Golden Decade) 346-356년
     3: [
       {
-        number: 19, year: 347, 
+        number: 19, year: 347,
         npnfNumber: 'XIX (NPNF XIV)',
         bgNumber: 19,
         easterDate: '4월 11일',
@@ -347,7 +347,7 @@ const FestalLettersComplete = () => {
         peace: true, goldenDecade: true, firstOfPeriod: true, reordered: false
       },
       {
-        number: 20, year: 348, 
+        number: 20, year: 348,
         npnfNumber: 'XX (NPNF XV)',
         bgNumber: 20,
         easterDate: '4월 2일', historicalContext: '"황금 10년" 계속.',
@@ -360,7 +360,7 @@ const FestalLettersComplete = () => {
         indexNote: '평화로운 해.', peace: true, goldenDecade: true, reordered: false
       },
       {
-        number: 21, year: 349, 
+        number: 21, year: 349,
         npnfNumber: 'XXI (NPNF XVI)',
         bgNumber: 21,
         easterDate: '4월 22일', historicalContext: '"황금 10년" 계속.',
@@ -373,7 +373,7 @@ const FestalLettersComplete = () => {
         indexNote: '평화로운 해.', peace: true, goldenDecade: true, reordered: false
       },
       {
-        number: 22, year: 350, 
+        number: 22, year: 350,
         npnfNumber: 'XXII (NPNF XVII)',
         bgNumber: 22,
         easterDate: '4월 7일',
@@ -390,7 +390,7 @@ const FestalLettersComplete = () => {
         peace: true, goldenDecade: true, politicalTurn: true, reordered: false
       },
       {
-        number: 23, year: 351, 
+        number: 23, year: 351,
         npnfNumber: 'XXIII (NPNF XVIII)',
         bgNumber: 23,
         easterDate: '3월 29일', historicalContext: '"황금 10년" 계속.',
@@ -424,7 +424,7 @@ const FestalLettersComplete = () => {
         reorderInfo: { from: 330, to: 352, npnfLetter: 'II', direction: 'later', years: 22 }
       },
       {
-        number: 25, year: 353, 
+        number: 25, year: 353,
         npnfNumber: 'XXV (NPNF XIX)',
         bgNumber: 25,
         easterDate: '4월 9일',
@@ -441,7 +441,7 @@ const FestalLettersComplete = () => {
         peace: true, goldenDecade: true, pressureBegins: true, reordered: false
       },
       {
-        number: 26, year: 354, 
+        number: 26, year: 354,
         npnfNumber: 'XXVI (NPNF XX)',
         bgNumber: 26,
         easterDate: '3월 25일', historicalContext: '"황금 10년" 후반. 긴장 고조.',
@@ -455,7 +455,7 @@ const FestalLettersComplete = () => {
         peace: true, goldenDecade: true, reordered: false
       },
       {
-        number: 27, year: 355, 
+        number: 27, year: 355,
         npnfNumber: 'XXVII (NPNF XXI)',
         bgNumber: 27,
         easterDate: '4월 14일',
@@ -472,7 +472,7 @@ const FestalLettersComplete = () => {
         peace: true, goldenDecade: true, lastOfGoldenDecade: true, reordered: false
       },
       {
-        number: 28, year: 356, 
+        number: 28, year: 356,
         npnfNumber: 'XXVIII (NPNF XXII)',
         bgNumber: 28,
         easterDate: '3월 30일',
@@ -494,7 +494,7 @@ const FestalLettersComplete = () => {
     // 제4기: "사막 유배에서 교부로" (From Desert Exile to Church Father) 356-373년
     4: [
       {
-        number: 29, year: 357, 
+        number: 29, year: 357,
         npnfNumber: 'XXIX (단편)',
         bgNumber: 29,
         easterDate: '4월 19일',
@@ -512,7 +512,7 @@ const FestalLettersComplete = () => {
         theologicalNote: '"그들은 장소를 차지하고, 여러분은 사도적 신앙을 지킵니다."'
       },
       {
-        number: 30, year: 358, 
+        number: 30, year: 358,
         npnfNumber: 'XXX (색인만)',
         bgNumber: 30,
         easterDate: '4월 4일', historicalContext: '세 번째 유배. 알렉산드리아에 은신.',
@@ -526,7 +526,7 @@ const FestalLettersComplete = () => {
         noLetter: true, exile: true, exileNumber: 3, exilePeriod: '3차 유배', reordered: false
       },
       {
-        number: 31, year: 359, 
+        number: 31, year: 359,
         npnfNumber: 'XXXI (색인만)',
         bgNumber: 31,
         easterDate: '4월 4일', historicalContext: '세 번째 유배 계속.',
@@ -540,7 +540,7 @@ const FestalLettersComplete = () => {
         noLetter: true, exile: true, exileNumber: 3, exilePeriod: '3차 유배', reordered: false
       },
       {
-        number: 32, year: 360, 
+        number: 32, year: 360,
         npnfNumber: 'XXXII (색인만)',
         bgNumber: 32,
         easterDate: '4월 23일',
@@ -557,7 +557,7 @@ const FestalLettersComplete = () => {
         critical: true, criticalNote: '박해의 강도 - 아타나시오스를 찾기 위해 동정녀까지 고문.'
       },
       {
-        number: 33, year: 361, 
+        number: 33, year: 361,
         npnfNumber: 'XXXIII (색인만)',
         bgNumber: 33,
         easterDate: '4월 8일',
@@ -574,7 +574,7 @@ const FestalLettersComplete = () => {
         critical: true, criticalNote: '콘스탄티우스 사망 + 율리아누스 즉위. 박해 중지.'
       },
       {
-        number: 34, year: 362, 
+        number: 34, year: 362,
         npnfNumber: 'XXXIV (NPNF XXIII)',
         bgNumber: 34,
         easterDate: '3월 30일',
@@ -591,7 +591,7 @@ const FestalLettersComplete = () => {
         return: true, reordered: false
       },
       {
-        number: 35, year: 363, 
+        number: 35, year: 363,
         npnfNumber: 'XXXV (NPNF XXIV)',
         bgNumber: 35,
         easterDate: '4월 20일',
@@ -608,7 +608,7 @@ const FestalLettersComplete = () => {
         exile: true, exileNumber: 4, exilePeriod: '4차 유배 (테바이드)', reordered: false
       },
       {
-        number: 36, year: 364, 
+        number: 36, year: 364,
         npnfNumber: 'XXXVI (NPNF XXV)',
         bgNumber: 36,
         easterDate: '4월 4일',
@@ -622,7 +622,7 @@ const FestalLettersComplete = () => {
         indexNote: '평화로운 해.', peace: true, reordered: false
       },
       {
-        number: 37, year: 365, 
+        number: 37, year: 365,
         npnfNumber: 'XXXVII (NPNF XXVI)',
         bgNumber: 37,
         easterDate: '4월 24일',
@@ -639,7 +639,7 @@ const FestalLettersComplete = () => {
         exile: true, exileNumber: 5, exilePeriod: '5차 유배 시작', reordered: false
       },
       {
-        number: 38, year: 366, 
+        number: 38, year: 366,
         npnfNumber: 'XXXVIII (NPNF XXVII)',
         bgNumber: 38,
         easterDate: '4월 16일',
@@ -657,7 +657,7 @@ const FestalLettersComplete = () => {
         reordered: false
       },
       {
-        number: 39, year: 367, 
+        number: 39, year: 367,
         npnfNumber: 'XXXIX ★★★ 정경 편지',
         bgNumber: 39,
         easterDate: '4월 1일',
@@ -676,7 +676,7 @@ const FestalLettersComplete = () => {
         theologicalNote: '"이것들이 구원의 샘이니... 이것들에 아무것도 더하지 말라. 이것들에서 아무것도 빼지 말라."'
       },
       {
-        number: 40, year: 368, 
+        number: 40, year: 368,
         npnfNumber: 'XL (단편)',
         bgNumber: 40,
         easterDate: '4월 20일', historicalContext: '평화로운 말년.',
@@ -690,7 +690,7 @@ const FestalLettersComplete = () => {
         indexNote: '평화로운 해.', peace: true, reordered: false
       },
       {
-        number: 41, year: 369, 
+        number: 41, year: 369,
         npnfNumber: 'XLI (단편)',
         bgNumber: 41,
         easterDate: '4월 12일', historicalContext: '평화로운 말년.',
@@ -704,7 +704,7 @@ const FestalLettersComplete = () => {
         indexNote: '평화로운 해.', peace: true, reordered: false
       },
       {
-        number: 42, year: 370, 
+        number: 42, year: 370,
         npnfNumber: 'XLII (색인만)',
         bgNumber: 42,
         easterDate: '3월 28일', historicalContext: '평화로운 말년.',
@@ -717,7 +717,7 @@ const FestalLettersComplete = () => {
         indexNote: '평화로운 해.', peace: true, indexOnly: true, reordered: false
       },
       {
-        number: 43, year: 371, 
+        number: 43, year: 371,
         npnfNumber: 'XLIII (색인만)',
         bgNumber: 43,
         easterDate: '4월 17일', historicalContext: '평화로운 말년.',
@@ -730,7 +730,7 @@ const FestalLettersComplete = () => {
         indexNote: '평화로운 해.', peace: true, indexOnly: true, reordered: false
       },
       {
-        number: 44, year: 372, 
+        number: 44, year: 372,
         npnfNumber: 'XLIV (단편)',
         bgNumber: 44,
         easterDate: '4월 8일', historicalContext: '아타나시오스 말년.',
@@ -744,7 +744,7 @@ const FestalLettersComplete = () => {
         indexNote: '평화로운 해.', peace: true, reordered: false
       },
       {
-        number: 45, year: 373, 
+        number: 45, year: 373,
         npnfNumber: 'XLV (단편) - 마지막 편지',
         bgNumber: 45,
         easterDate: '3월 24일',
@@ -752,7 +752,7 @@ const FestalLettersComplete = () => {
         syriacStatus: 'none', syriacDetail: '시리아어 미보존',
         copticStatus: 'none', copticDetail: '미발견',
         greekStatus: 'cosmas', greekDetail: '코스마스 인용문만 보존',
-        brakkeGwynn: 'p. 230', changes: 'moderate',
+        brakkeGwynn: 'pp. 299-300 (코스마스 인용만)', changes: 'moderate',
         changeType: '그리스어 인용 복원',
         changeDetail: '코스마스의 그리스어 인용만 보존.',
         npnfPage: 'NPNF2-04, Letter XLV (매우 제한적)',
@@ -765,33 +765,33 @@ const FestalLettersComplete = () => {
   };
 
   const periodInfo = {
-    1: { 
-      name: '"초기" (The Early Years)', 
-      years: '328-335년', 
+    1: {
+      name: '"초기" (The Early Years)',
+      years: '328-335년',
       color: 'blue',
       description: '대주교 취임부터 튀로스 공의회 정죄까지 - 평화로운 목회의 시작',
       letters: '편지 1, 24, 14, 4-7 (B&G 순서)',
       stats: { total: 7, syriac: 6, coptic: 5, greek: 1, reordering: 2 }
     },
-    2: { 
-      name: '"동서 사이에서" (Between East and West)', 
-      years: '335-346년', 
+    2: {
+      name: '"동서 사이에서" (Between East and West)',
+      years: '335-346년',
       color: 'amber',
       description: '첫 번째 유배(트리어)와 두 번째 유배(로마) - 동방과 서방 사이',
       letters: '편지 8-13, 3, 15-18 (B&G 순서)',
       stats: { total: 11, syriac: 6, coptic: 3, greek: 0, exile: 9, return: 2, reordering: 1 }
     },
-    3: { 
-      name: '"황금 10년" (The Golden Decade)', 
-      years: '346-356년', 
+    3: {
+      name: '"황금 10년" (The Golden Decade)',
+      years: '346-356년',
       color: 'green',
       description: '두 번째 유배 귀환부터 세 번째 유배 시작까지 - 가장 평화로운 시기',
       letters: '편지 19-23, 2, 25-28 (B&G 순서)',
       stats: { total: 10, syriac: 9, coptic: 6, greek: 2, reordering: 1, peace: 9 }
     },
-    4: { 
-      name: '"사막 유배에서 교부로" (From Desert Exile to Church Father)', 
-      years: '356-373년', 
+    4: {
+      name: '"사막 유배에서 교부로" (From Desert Exile to Church Father)',
+      years: '356-373년',
       color: 'purple',
       description: '세 번째~다섯 번째 유배, 말년의 평화와 정경 확정',
       letters: '편지 29-45',
@@ -932,12 +932,11 @@ const FestalLettersComplete = () => {
         </div>
 
         {/* 현재 시기 정보 */}
-        <div className={`rounded-lg shadow-md p-4 mb-6 ${
-          selectedPeriod === 1 ? 'bg-blue-50 border-l-4 border-blue-500' :
-          selectedPeriod === 2 ? 'bg-amber-50 border-l-4 border-amber-500' :
-          selectedPeriod === 3 ? 'bg-green-50 border-l-4 border-green-500' :
-          'bg-purple-50 border-l-4 border-purple-500'
-        }`}>
+        <div className={`rounded-lg shadow-md p-4 mb-6 ${selectedPeriod === 1 ? 'bg-blue-50 border-l-4 border-blue-500' :
+            selectedPeriod === 2 ? 'bg-amber-50 border-l-4 border-amber-500' :
+              selectedPeriod === 3 ? 'bg-green-50 border-l-4 border-green-500' :
+                'bg-purple-50 border-l-4 border-purple-500'
+          }`}>
           <div className="flex justify-between items-start">
             <div>
               <h2 className="text-xl font-bold">{currentPeriod.name}</h2>
@@ -998,8 +997,8 @@ const FestalLettersComplete = () => {
                   {currentLetters.map((letter, idx) => {
                     const badge = getChangesBadge(letter.changes);
                     return (
-                      <tr 
-                        key={letter.number + '-' + letter.year} 
+                      <tr
+                        key={letter.number + '-' + letter.year}
                         className={`cursor-pointer hover:bg-blue-50 ${idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}
                           ${letter.reordered ? 'bg-red-50 border-l-4 border-red-500' : ''}
                           ${letter.canonLetter ? 'bg-purple-100' : ''}
@@ -1062,13 +1061,12 @@ const FestalLettersComplete = () => {
                     <button
                       key={letter.number + '-' + letter.year}
                       onClick={() => setSelectedLetter(letter.number)}
-                      className={`w-full text-left p-2 rounded text-sm transition ${
-                        selectedLetter === letter.number ? 'bg-indigo-100 border border-indigo-400' :
-                        letter.reordered ? 'bg-red-50 border border-red-200' :
-                        letter.noLetter ? 'bg-gray-50 opacity-60' :
-                        letter.canonLetter ? 'bg-purple-50' :
-                        'bg-gray-50 hover:bg-gray-100'
-                      }`}
+                      className={`w-full text-left p-2 rounded text-sm transition ${selectedLetter === letter.number ? 'bg-indigo-100 border border-indigo-400' :
+                          letter.reordered ? 'bg-red-50 border border-red-200' :
+                            letter.noLetter ? 'bg-gray-50 opacity-60' :
+                              letter.canonLetter ? 'bg-purple-50' :
+                                'bg-gray-50 hover:bg-gray-100'
+                        }`}
                     >
                       <div className="flex justify-between items-center">
                         <span className="font-medium">
