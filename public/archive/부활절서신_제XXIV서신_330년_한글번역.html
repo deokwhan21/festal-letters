@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="아타나시오스 부활절 서신 제24서신(330년) 연구용 한국어 번역">
+  <title>아타나시오스 『부활절 서신』 제24서신(330년) 한국어 번역</title>
+  <style>
+    :root {
+      --paper: #f5f1e8;
+      --surface: #fffdf8;
+      --surface-2: #f0eadf;
+      --ink: #202a2e;
+      --muted: #657177;
+      --line: #d9d0c1;
+      --accent: #8b3a2b;
+      --accent-2: #1f6572;
+      --accent-soft: #f2dfd7;
+      --gold: #b5842c;
+      --shadow: 0 18px 55px rgba(58, 46, 34, 0.11);
+      --radius: 18px;
+      --serif: "Noto Serif KR", "AppleMyungjo", "Nanum Myeongjo", "Times New Roman", serif;
+      --sans: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 8% 4%, rgba(181, 132, 44, 0.12), transparent 25rem),
+        linear-gradient(180deg, #ebe4d7 0, var(--paper) 18rem);
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.78;
+      word-break: keep-all;
+      overflow-wrap: break-word;
+    }
+
+    .reading-progress {
+      position: fixed;
+      inset: 0 auto auto 0;
+      z-index: 100;
+      width: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--accent), var(--gold));
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 68px clamp(24px, 6vw, 92px) 58px;
+      color: #fffaf0;
+      background:
+        linear-gradient(120deg, rgba(22, 51, 56, 0.98), rgba(31, 101, 114, 0.92)),
+        #1f6572;
+    }
+
+    .hero::after {
+      content: "330";
+      position: absolute;
+      right: clamp(-36px, 3vw, 40px);
+      bottom: -42px;
+      color: rgba(255, 255, 255, 0.08);
+      font: 800 clamp(86px, 16vw, 220px)/1 var(--serif);
+      letter-spacing: -0.08em;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 18px;
+      padding: 7px 12px;
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08);
+      font-size: 0.78rem;
+      font-weight: 750;
+      letter-spacing: 0.08em;
+    }
+
+    .hero h1 {
+      max-width: 900px;
+      margin: 0;
+      color: #fff;
+      font: 700 clamp(2rem, 5vw, 4.25rem)/1.18 var(--serif);
+      letter-spacing: -0.045em;
+    }
+
+    .hero .subtitle {
+      max-width: 800px;
+      margin: 22px 0 0;
+      color: rgba(255, 255, 255, 0.82);
+      font-size: clamp(1rem, 1.8vw, 1.2rem);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 28px;
+    }
+
+    button, .jump-button {
+      min-height: 42px;
+      padding: 10px 15px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 10px;
+      color: white;
+      background: rgba(255, 255, 255, 0.1);
+      font: 700 0.9rem var(--sans);
+      cursor: pointer;
+      text-decoration: none;
+    }
+    button:hover, .jump-button:hover { background: rgba(255, 255, 255, 0.18); }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(190px, 250px) minmax(0, 920px);
+      gap: 34px;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 34px 24px 80px;
+      align-items: start;
+    }
+
+    aside {
+      position: sticky;
+      top: 24px;
+      max-height: calc(100vh - 48px);
+      overflow: auto;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      background: rgba(255, 253, 248, 0.87);
+      box-shadow: 0 10px 35px rgba(58, 46, 34, 0.07);
+      backdrop-filter: blur(12px);
+    }
+
+    .toc-title {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-size: 0.74rem;
+      font-weight: 850;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .toc-link {
+      display: block;
+      margin: 2px 0;
+      padding: 7px 9px;
+      border-radius: 8px;
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.38;
+      text-decoration: none;
+    }
+    .toc-link.level-3 { padding-left: 22px; font-size: 0.81rem; }
+    .toc-link:hover, .toc-link.active { color: var(--accent); background: var(--accent-soft); }
+
+    main {
+      min-width: 0;
+      padding: clamp(24px, 4vw, 56px);
+      border: 1px solid rgba(217, 208, 193, 0.86);
+      border-radius: var(--radius);
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    .at-a-glance {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-bottom: 46px;
+    }
+
+    .glance-card {
+      min-height: 134px;
+      padding: 17px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: linear-gradient(145deg, #fffefb, var(--surface-2));
+    }
+    .glance-card b {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--accent-2);
+      font-size: 0.78rem;
+      letter-spacing: 0.04em;
+    }
+    .glance-card span { font-size: 0.9rem; line-height: 1.55; }
+
+    main > h1 { display: none; }
+    h2, h3 { scroll-margin-top: 20px; }
+    h2 {
+      margin: 64px 0 20px;
+      padding-top: 8px;
+      color: #203d42;
+      font: 750 clamp(1.55rem, 2.5vw, 2.15rem)/1.35 var(--serif);
+      letter-spacing: -0.035em;
+    }
+    h2:first-of-type { margin-top: 0; }
+    h2::before {
+      content: "";
+      display: block;
+      width: 42px;
+      height: 4px;
+      margin-bottom: 12px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--accent), var(--gold));
+    }
+    h3 {
+      margin: 38px 0 13px;
+      color: var(--accent);
+      font: 730 1.22rem/1.4 var(--serif);
+    }
+    p { margin: 0 0 17px; }
+    strong { color: #722f23; }
+    em { color: #3c4e53; }
+    ul, ol { margin: 12px 0 22px; padding-left: 1.45rem; }
+    li { margin: 7px 0; }
+    li::marker { color: var(--accent); font-weight: 750; }
+
+    blockquote {
+      position: relative;
+      margin: 26px 0;
+      padding: 22px 24px 22px 28px;
+      border: 0;
+      border-left: 5px solid var(--accent);
+      border-radius: 0 14px 14px 0;
+      background: linear-gradient(100deg, var(--accent-soft), #fbf4e9);
+      color: #3c302a;
+      font-family: var(--serif);
+      font-size: 1.03rem;
+    }
+    blockquote p { margin: 0; }
+
+    .footnote-ref {
+      margin-left: 0.08em;
+      font-family: var(--sans);
+      font-size: 0.72em;
+      line-height: 0;
+      vertical-align: super;
+    }
+    .footnote-ref a,
+    .footnote-back {
+      color: var(--accent-2);
+      text-decoration: none;
+    }
+    .footnote {
+      position: relative;
+      margin-bottom: 12px;
+      padding-left: 2.15rem;
+      color: #49575b;
+      font-size: 0.92rem;
+      line-height: 1.68;
+    }
+    .footnote-number {
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: 750;
+    }
+
+    .season-mark {
+      padding: 0.08em 0.2em;
+      border-radius: 0.32em;
+      color: inherit;
+      box-decoration-break: clone;
+      -webkit-box-decoration-break: clone;
+    }
+    .season-mark.lent {
+      background: #f7d6d2;
+      box-shadow: inset 0 -2px 0 #b64235;
+    }
+    .season-mark.pentecost {
+      background: #d8e9f8;
+      box-shadow: inset 0 -2px 0 #2d6fa8;
+    }
+
+    .table-wrap {
+      width: 100%;
+      margin: 22px 0 34px;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: white;
+      box-shadow: 0 8px 28px rgba(58, 46, 34, 0.06);
+    }
+    table {
+      width: 100%;
+      min-width: 780px;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 0.88rem;
+      line-height: 1.57;
+    }
+    thead th {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      padding: 14px 15px;
+      color: white;
+      background: #244f57;
+      text-align: left;
+      vertical-align: bottom;
+    }
+    tbody td, tbody th {
+      padding: 14px 15px;
+      border-top: 1px solid #e9e2d7;
+      vertical-align: top;
+      text-align: left;
+    }
+    tbody th {
+      min-width: 110px;
+      color: #6f3026;
+      background: #fbf4e9;
+      font-weight: 800;
+    }
+    tbody tr:nth-child(even) td { background: #fcfaf6; }
+    tbody tr:hover td, tbody tr:hover th { background: #f5ebdc; }
+
+    .footer {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 0 24px 54px;
+      color: var(--muted);
+      font-size: 0.82rem;
+      text-align: center;
+    }
+
+    @media (max-width: 980px) {
+      .layout { display: block; padding-top: 22px; }
+      aside {
+        position: relative;
+        top: auto;
+        max-height: none;
+        margin-bottom: 18px;
+      }
+      .toc-link { display: inline-block; margin: 2px; }
+      .toc-link.level-3 { padding-left: 9px; }
+      .at-a-glance { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 620px) {
+      body { font-size: 15px; word-break: normal; }
+      .hero { padding: 52px 20px 46px; }
+      .layout { padding: 16px 12px 56px; }
+      main { padding: 25px 18px; border-radius: 14px; }
+      aside { display: none; }
+      .at-a-glance { grid-template-columns: 1fr; }
+      .glance-card { min-height: 0; }
+      h2 { margin-top: 48px; }
+      table { min-width: 720px; font-size: 0.82rem; }
+    }
+
+    @media print {
+      body { background: white; font-size: 10.5pt; }
+      .hero { padding: 26px 0; color: black; background: white; border-bottom: 2px solid #222; }
+      .hero h1 { color: black; font-size: 25pt; }
+      .hero .subtitle { color: #333; }
+      .hero::after, .hero-actions, aside, .reading-progress { display: none; }
+      .eyebrow { color: #333; border-color: #999; background: transparent; }
+      .layout { display: block; max-width: none; padding: 18px 0; }
+      main { padding: 0; border: 0; box-shadow: none; }
+      .table-wrap { overflow: visible; box-shadow: none; break-inside: avoid; }
+      table { min-width: 0; font-size: 7.8pt; }
+      thead th { color: white !important; print-color-adjust: exact; }
+      h2, h3 { break-after: avoid; }
+      blockquote, .glance-card { break-inside: avoid; }
+      .footer { padding: 12px 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="reading-progress" aria-hidden="true"></div>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">연구용 한국어 번역 · Festal Letter 24 · 330년</div>
+      <h1>아타나시오스 『부활절 서신』 제24서신(330년) 한국어 번역</h1>
+      <p class="subtitle">제24서신의 연구용 한국어 번역입니다. Brakke–Gwynn 판의 문단 번호와 쪽수 구분을 보존했습니다.</p>
+      <div class="hero-actions">
+        <a class="jump-button" href="#본문">번역 본문 읽기</a><a class="jump-button" href="#번역상-중요한-주석">연구 주석 보기</a>
+        <button type="button" onclick="window.print()">인쇄 / PDF 저장</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside aria-label="문서 목차">
+      <p class="toc-title">Contents</p>
+      <a class="toc-link level-2" href="#번역-기준과-용어">번역 기준과 용어</a>
+<a class="toc-link level-2" href="#편집자-표제">편집자 표제</a>
+<a class="toc-link level-3" href="#부활절-서신-제24서신330년">부활절 서신 제24서신(330년)</a>
+<a class="toc-link level-2" href="#본문">본문</a>
+<a class="toc-link level-3" href="#brakkegwynn-p-57">[Brakke–Gwynn, p. 57]</a>
+<a class="toc-link level-3" href="#brakkegwynn-p-58">[Brakke–Gwynn, p. 58]</a>
+<a class="toc-link level-3" href="#brakkegwynn-p-59">[Brakke–Gwynn, p. 59]</a>
+<a class="toc-link level-3" href="#brakkegwynn-p-60">[Brakke–Gwynn, p. 60]</a>
+<a class="toc-link level-3" href="#brakkegwynn-p-61">[Brakke–Gwynn, p. 61]</a>
+<a class="toc-link level-3" href="#절기-공지-원문-대조-·-제21문단">절기 공지 원문 대조 · 제21문단</a>
+<a class="toc-link level-3" href="#brakkegwynn-p-62">[Brakke–Gwynn, p. 62]</a>
+<a class="toc-link level-2" href="#번역상-중요한-주석">번역상 중요한 주석</a>
+    </aside>
+
+    <main>
+      <section class="at-a-glance" aria-label="핵심 요약">
+        <div class="glance-card"><b>서신</b><span>제24서신</span></div><div class="glance-card"><b>연대</b><span>330년</span></div><div class="glance-card"><b>저본</b><span>Brakke–Gwynn 영어 번역</span></div><div class="glance-card"><b>편집</b><span>문단 번호 · 원서 쪽수 보존</span></div>
+      </section>
+      <h1 id="아타나시오스-부활절-서신-제24서신330년-한국어-번역">아타나시오스 『부활절 서신』 제24서신(330년) 한국어 번역</h1>
+<h2 id="번역-기준과-용어">번역 기준과 용어</h2>
+<ul><li>번역 저본: David Brakke and David M. Gwynn, <em>The Festal Letters of Athanasius of Alexandria, with the Festal Index and the Historia Acephala</em> (Liverpool University Press, 2022), 57–62.</li><li>이 번역은 Brakke–Gwynn의 영어 번역을 옮긴 <strong>연구용 한국어 번역</strong>이다. 콥트어 원문에서 직접 번역한 비평판 번역은 아니다.</li><li><code>Passover</code>는 문맥상 그리스도교의 파스카를 가리킬 때 <strong>파스카(유월절)</strong>로, <code>feast</code>는 <strong>축제</strong>, <code>fast</code>는 <strong>금식</strong>으로 옮겼다.</li><li>성경 인용문은 특정 한국어 성경판을 전재하지 않고 영어 저본을 직역하였다. 논문에 인용할 때에는 채택할 한국어 성경판과 대조하는 것이 좋다.</li><li>이 서신은 콥트어 사본에 단편적으로만 보존되어 있어 현존 본문이 제9문단의 중간에서 시작한다.</li><li>제21문단의 중괄호 <code>{…}</code>는 Brakke–Gwynn이 후대 필사자의 삽입문으로 판정한 부분을 표시한다. 이 삽입문 때문에 한때 서신의 연대가 352년으로 잘못 추정되었으나, 최신 연대 배열에서는 제24서신을 330년에 둔다.</li></ul>
+<h2 id="편집자-표제">편집자 표제</h2>
+<h3 id="부활절-서신-제24서신330년">부활절 서신 제24서신(330년)</h3>
+<p>본문은 콥트어 사본 MONB.AT에 단편적으로 보존되어 있다. 콥트어 본문은 Lefort(1955), 37–42에 수록되어 있다.</p>
+<p>---</p>
+<h2 id="본문">본문</h2>
+<h3 id="brakkegwynn-p-57">[Brakke–Gwynn, p. 57]</h3>
+<p><strong>9.</strong> [……] 그러나 이 관심이 진리를 향한 것이라면, 진리를 여러분의 관심사로 삼으십시오. 이 성경을 선포하신 성령께서 신뢰할 만한 증인이시기 때문입니다. 모세가 “너의 생명이 네 앞에 매달려 있을 것이다”라고 말할 때, 그의 음성을 여러분에게 진리로 삼으십시오(신 28:66). 그 생명이 “내가 생명이다”라고 말씀하시는 분 외에 누구이겠습니까?(요 11:25; 14:6) 유대인들이 믿지 않았던 분, 사형 집행인들이 벌거벗기고 군인들이 그 옷을 서로 나누어 가진 분이 바로 그분입니다(마 27:35; 시 21[22]:19).</p>
+<p><strong>10.</strong> 그러므로 거룩한 예레미야는 경건을 위하여 그러한 사람들에게서 돌아섰고 홀로 앉기를 기뻐하였습니다(렘 15:17 참조). 그는 불의한 큰 무리보다 의로운 한 사람이 더 낫다는 것과, 잠언 기자의 말처럼 한 의인으로 말미암아 도성이 번영하지만 어리석은 무리로 말미암아 무너진다는 것을 알았기 때문입니다(잠 11:10–11 참조). 이 때문에 성도들은 저마다 넓고 광대한 길을 피하여(마 7:13 참조), 엘리야와 엘리사와 예언자들의 온 무리처럼 홀로 머물며 덕스럽게 살았습니다. 위대한 모세도 이러한 증언에서 예외가 아닙니다. 다단과 아비람이 일어나 그를 고발했을 때, 모세 역시 그들의 무지에서 벗어나고자 그들에게서 떠나 자기 장막을 따로 세웠습니다(민 16:20–30 참조).</p>
+<p><strong>11.</strong> 이것은 지혜롭고 하나님의 벗인 사람이 고요함 속에서 악을 벗어 버림으로써, 사람들의 마음이 안일함에 빠져 있을 때 그 무리의 소란을 피한다는 표징입니다. 내가 언급한 성도들만 고요함을 사랑한 것은 아닙니다. 누구든지 원한다면 성경에서 다음 사실을 배울 수 있습니다. 덕으로 충만했던 족장 이삭은 오직 자기 영혼을 고요하게 하고 자신에게로 돌이켜 이 방식으로 하나님을 기쁘시게 하려고 군중의 소란에서 물러나 하나님과 대화하였습니다(창 26:17–25 참조).</p>
+<h3 id="brakkegwynn-p-58">[Brakke–Gwynn, p. 58]</h3>
+<p>훈련에서 위대했던 야곱도 시험 가운데 에서를 피하여 물러나 홀로 있게 되었을 때에야 비로소 더 높은 것들의 계시를 받을 자격을 얻었습니다(창 27–28장, 특히 28:10–17 참조).</p>
+<p><strong>12.</strong> 사랑하는 이들이여, 인생의 환난 속에서 고요함과 사람들에게서 물러남이 얼마나 큰 힘을 지니는지 보십니까? 이러한 삶과 순결한 양심이 사람을 아브라함처럼 하나님의 벗이 되게 하니, 그것들이 얼마나 큰 힘을 지니는지 보십니까? 아브라함은 칼데아 사람들의 땅에서 물러났을 때 “하나님의 벗이라 불렸습니다”(약 2:23). 위대한 모세도 마찬가지로 이집트 땅, 곧 어둠에 가까운 지상의 행위들에서 물러났을 때 하나님과 “얼굴을 마주하여” 말하였고(출 33:11), 원수들에게서 구출되어 광야를 지나갔습니다. 이 모든 것은 “어둠에서 나와 그의 놀라운 빛으로” 물러나는 일과(벧전 2:9), 하늘에 있는 도성으로 올라가는 일의 그림자이며, 참된 기쁨과 영원한 축제의 모형입니다.</p>
+<p><strong>13.</strong> 그러나 무지한 유대인들은 이러한 것들을 이해하지 못했습니다. 그들은 하늘의 예루살렘이라는 모형을 이해하지 못했으므로 그 도성에 관한 생각에서 길을 잃었고, “걸림돌에 걸려 넘어졌습니다.” 그 돌은 유대인과 그리스인이라는 두 백성을 서로 결합하고, 참으로 온 인류를 결합함으로써 모두를 위한 모퉁잇돌이 되었습니다(롬 9:32; 10:12; 마 21:42; 시 117[118]:22; 엡 2:14–16). 무지하고 육적인 유대인들은 지금까지도 그분을 믿지 않았습니다. “그들은 하나님의 의를 알지 못하고 자기들의 의를 세우려 하였으므로 하나님의 의에 복종하지 않았다. 율법의 완성은 그분께 희망을 두는 모든 사람의 의를 위한 그리스도이시다.” 이는 먼저 유대인에게, 또한 그리스인에게 해당합니다(롬 10:3–4; 1:16). 우리 조상 아브라함이 의를 얻었다고 증언된 것과 같습니다(약 2:23; 창 15:6 참조).</p>
+<h3 id="brakkegwynn-p-59">[Brakke–Gwynn, p. 59]</h3>
+<p><strong>14.</strong> 사랑하는 이들이여, 믿음의 결핍은 큰 악이며, 믿음은 모든 덕의 어머니입니다. 믿음의 결핍과 믿음은 모두 무언가를 낳지만, 믿음의 결핍은 악과 그 여러 형태를 낳고 믿음은 희망과 모든 덕을 낳습니다. 그러므로 믿지 않는 사람은 이곳에서부터 심판의 형벌을 미리 받습니다. 주님께서 “나를 믿는 사람은 심판받지 않지만, 믿지 않는 사람은 이미 심판받았다”고 말씀하시기 때문입니다(요 3:18). 복음서에 기록된 회당장은 구주께 나아갔을 때, 간구와 하나님을 향한 믿음을 통해서가 아니고서는 자기 딸이 다시 생명을 얻는 복을 받지 못했습니다(막 5:22–24, 35–43).</p>
+<p><strong>15.</strong> 그러나 유대인들만은 자발적으로 길을 잃어 그 도성에 이르지 못했습니다. 그들은 율법을 외적으로 읽음으로써 모든 것에서 완전히 멀어졌습니다. 그들은 파스카를 지키지도 않고 율법의 행위를 수행하지도 않으며, 오히려 스스로 합당하지 않은 상태에 머뭅니다. 파스카 제물을 바치는 때와 장소를 놓치고 이성 없는 짐승의 고기를 계속 먹음으로써, 참된 어린양이신 우리 주 예수 그리스도의 이성적 양식을 잃어버렸기 때문입니다. 그분은 “하늘에서 내려와 세상에 생명을 주는 참된 빵”이십니다(요 6:33, 41). 그러므로 유대인들은 그것이 그들의 바람인 만큼 길을 잃게 두고, “때에 맞지 않게” 이성 없는 양식을 먹게 두십시오(딤후 4:2).</p>
+<p><strong>16.</strong> 그러나 우리 가운데에는 그림자와 모형들이 가리키는 진리, 곧 아버지의 형상이신 우리 주 예수 그리스도가 계십니다. 우리는 언제나 그분을 통하여 양육받습니다. 그분의 피를 우리 영혼의 문에 바름으로써(출 12:22–23 참조), 우리는 파라오와 그의 감독자들의 일에서 해방될 것입니다(출 1:11 참조). 이는 기록된 일을 이야기의 표면적 차원에서 따르는 것이 아닙니다. 그러한 일들은 더 이상 존재하지 않기 때문입니다. 오히려 그것들이 가리키는 행위와 관련된 것입니다. 우리는 그 일들을 통하여 진리를 배웠습니다.</p>
+<p><strong>17.</strong> 그때 이스라엘 자손이 이성 없는 양을 잡았을 때에는 주님께서 치셨으므로 그들의 원수 가운데 처음 난 것들이 죽었습니다(출 12:29–30). 그러나 이제 우리가 “하늘에서 내려온 빵”을 먹을 때에는(요 6:33), 살아 계신 하나님의 말씀으로 말미암아 죽음이 약해졌으므로 우리의 조롱을 듣게 되었습니다. “죽음아, 네 심판이 어디 있느냐? 지옥아, 네 쏘는 것이 어디 있느냐?”(호 13:14; 고전 15:55)</p>
+<h3 id="brakkegwynn-p-60">[Brakke–Gwynn, p. 60]</h3>
+<p>그때 그들이 이집트에서 나와 건너갔을 때에는 원수들이 바다의 노리개가 되었습니다(출 14:27–28). 그러나 이제 우리가 땅에서 하늘로 건너갈 때에는 사탄 자신이 마침내 번개처럼 하늘에서 떨어집니다(눅 10:18). 처음에는 주님께서 모세를 통하여 불기둥과 구름기둥 가운데서 그들보다 앞서 가셨습니다(출 13:21). 그러나 이제는 몸소 우리를 부르시며 말씀하십니다. “목마른 사람은 누구든지 내게 와서 마셔라. 나를 믿는 사람은 성경이 말한 것처럼 그 사람에게서 생수의 강들이 흘러나와 영원한 생명에 이르도록 솟아날 것이다”(요 7:37–38).</p>
+<p><strong>18.</strong> 그러므로 모든 사람은 열심과 간절함으로 축제에 갈 준비를 하십시오. 구주께서 그들을 초대하시는 말씀을 들으십시오. 모든 사람을 한 사람씩 위로하시는 분은 바로 그분이십니다. 양식이 필요한 사람은 그분께 나아가십시오. 그분은 참된 빵이시기 때문입니다(요 6:32). 목마른 사람도 그분께 오십시오. 그분은 생수의 샘이시기 때문입니다(요 4:10). 병든 사람도 그분께 오십시오. 그분은 병든 이들을 치유하는 말씀이시기 때문입니다. 누군가 죄의 짐에 눌려 그것을 견디기 어렵다고 여긴다면 그분께 달려가십시오. 그분은 안식이며 구원의 피난처이시기 때문입니다. “수고하고 무거운 짐을 진 사람은 모두 내게 오라. 내가 너희에게 쉼을 주겠다”고 선포하신 그분께 의지하십시오(마 11:28).</p>
+<p><strong>19.</strong> 축제를 지키려는 모든 사람은 이러한 열심과 간절함을 품으십시오. 우리는 축제이신 분께 가고 있기 때문입니다. 앞서 말했듯이, “우리의 파스카이신 그리스도께서 우리를 위하여 희생되셨습니다”(고전 5:7). 그분께 나아갈 때 우리는 “어디에 당신을 위하여 파스카를 준비하기를 원하십니까?”라고 물을 것입니다(막 14:12). 모세의 모형들은 날이 밝기 전에 어둠 속에서 빛을 비추므로 지금까지로 충분합니다. 이제 태양이 빛났으니 모든 어둠은 흩어지고, 모든 어둠은 빛에 의해 흩어지게 하십시오(요일 2:8 참조).</p>
+<h3 id="brakkegwynn-p-61">[Brakke–Gwynn, p. 61]</h3>
+<p>구주께서 친히 파스카 준비와 제자들과 함께 자신의 바람을 이루신 장소를 하나의 표징으로 우리에게 알려 주십니다. 그분은 “내가 죽기 전에 너희와 함께 이 파스카를 먹기를 간절히 원하였다”고 말씀하십니다(눅 22:15). 파스카의 표징은 물동이를 지고 가구가 갖추어지고 깨끗하게 마련된 다락방으로 올라가는 한 사람입니다(눅 22:10–12). 이제는 더 이상 “염소의 피와 뿌려진 암송아지의 재가 더럽혀진 사람들을 정결하게 하는” 것이 아닙니다(히 9:13). 오히려 거듭남의 씻음을 통하여 정결함이 모든 곳에 이르렀습니다(딛 3:5 참조). 파스카의 축제는 이러한 일들 안에서 성취됩니다.</p>
+<p><strong>20.</strong> 예수께서는 이와 같이 제자들과 함께 파스카를 드셨으며, 우리가 유다처럼 서둘러 먹고 마시기 시작하여 생명을 버리고 스스로 죽음을 불러들이지 않는다면 우리와도 함께 드실 것입니다. 오히려 슬퍼하며 죽음을 받아들이시는 그분과 함께 머뭅시다(마 26:38 참조). 그리고 용기를 내어 그분께서 죽은 이들 가운데서 일어나 살아 있는 이들과 죽은 이들을 심판하러 오실 것을 믿읍시다(딤후 4:1 참조). 이렇게 하여 이제부터 영원한 기쁨의 보증과 주님께서 세상 끝까지 우리와 함께하신다는 약속을 받으면(마 28:20), 우리는 하늘에서 완전한 축제를 지킬 것입니다.</p>
+<p><strong>21.</strong> 우리는 거룩한 금식을 {파메노트월 13일(3월 9일)에 시작하고, <mark class="season-mark lent">거룩한 사순절의 여러 주간이 지난 뒤</mark>} 파르무티월 18일(4월 13일)에 시작할 것입니다. 같은 달 23일(4월 18일), 곧 토요일 저녁에 금식을 마칠 것입니다. 같은 달 24일(4월 19일)에 거룩한 주일이 우리에게 밝아 옵니다. 이어서 <mark class="season-mark pentecost">거룩한 오순절의 일곱 주간</mark>을 셀 것이며, 그 기간에 하나님을 기쁘시게 하는 일을 행함으로써 축제를 지킬 것입니다.</p>
+<p>참으로 축제란 바로 이것입니다. 죄인들이 죄악된 삶에서 더 나은 삶으로 옮겨 가는 것, 가난한 이들을 기억하고 나그네 대접을 소홀히 하지 않는 것, 헐벗은 이들에게 옷을 입히고 거처 없는 이들을 우리 집으로 맞아들이는 것, 무엇보다 하나님과 이웃을 사랑하여 율법과 예언자들을 성취하는 것, 그리고 하나님의 독생자이신 우리 주 예수 그리스도를 통하여 복을 상속받는 것입니다. 그리스도를 통하여 성령과 함께 아버지께 영광과 권능이 영원무궁하기를 빕니다. 아멘.</p>
+<h3 id="절기-공지-원문-대조-·-제21문단">절기 공지 원문 대조 · 제21문단</h3>
+<div class="table-wrap" role="region" aria-label="가로 스크롤 표" tabindex="0"><table>
+<thead><tr><th scope="col">영문 원본(Brakke–Gwynn, pp. 61–62)</th><th scope="col">한국어 번역</th></tr></thead>
+<tbody>
+<tr><th scope="row">21. We will begin the holy fast {on the thirteenth of Phamenoth (9 March), and after the weeks of the holy Lent} on the eighteenth of Pharmouthi (13 April), we will cease fasting on the twenty-third of the same month (18 April) on the very evening of Saturday. The holy Sunday dawns upon us on the twenty-fourth of the same month (19 April). Next we will count the seven weeks of the holy Pentecost, and during them we will celebrate the feast by doing what pleases God.</th><td>우리는 거룩한 금식을 {파메노트월 13일(3월 9일)에 시작하고, <mark class="season-mark lent">거룩한 사순절의 여러 주간이 지난 뒤</mark>} 파르무티월 18일(4월 13일)에 시작할 것입니다. 같은 달 23일(4월 18일), 곧 토요일 저녁에 금식을 마칠 것입니다. 같은 달 24일(4월 19일)에 거룩한 주일이 우리에게 밝아 옵니다. 이어서 <mark class="season-mark pentecost">거룩한 오순절의 일곱 주간</mark>을 셀 것이며, 그 기간에 하나님을 기쁘시게 하는 일을 행함으로써 축제를 지킬 것입니다.</td></tr>
+</tbody></table></div>
+<h3 id="brakkegwynn-p-62">[Brakke–Gwynn, p. 62]</h3>
+<blockquote><p>“거룩한 입맞춤으로 서로 문안하십시오”(롬 16:16 등 참조). 사랑하는 형제들이여, 여러분이 주님 안에서 구원받기를 기도합니다.</p></blockquote>
+<p><strong>복된 아타나시오스의 스물네 번째 서신이다.</strong></p>
+<p>---</p>
+<h2 id="번역상-중요한-주석">번역상 중요한 주석</h2>
+<ol><li>Brakke–Gwynn은 제21문단의 중괄호 안 문장, 곧 “파메노트월 13일(3월 9일)에 시작하고, 거룩한 사순절의 여러 주간이 지난 뒤”를 후대 필사자의 삽입으로 본다(Lorenz 1986, 27–28). 따라서 <code>[[LENT]]</code> 표시는 아타나시오스가 330년에 직접 작성한 원문이 아니라 후대 삽입문 안의 사순절 표현을 식별하기 위한 것이다.</li><li>삽입문을 제외한 원래의 제24서신은 파르무티월 18일부터 23일까지의 짧은 <strong>6일 금식</strong>만 규정한다. 그러므로 이 서신을 아타나시오스의 40일 사순절 시행 증거로 사용해서는 안 된다.</li><li>이 6일 금식 규정은 제24서신을 352년이 아니라 <strong>330년</strong>에 배치하는 핵심 연대학적 근거이다.</li><li>제12문단은 아타나시오스가 금욕적 물러남을 권면한 가장 이른 사례 가운데 하나이다. Brakke–Gwynn은 이것이 테바이드 여행과 파코미오스 수도생활과의 접촉 가능성에 영향을 받았을 수 있다고 설명한다.</li><li>제13–17문단의 유대교 비판과 대체신학적 표현은 고대 그리스도교 논쟁의 역사적 문맥에 속한다. 현대 연구에서는 이를 신학적 주장으로 반복하기보다 수사적·역사적으로 비판하여 분석할 필요가 있다.</li><li>제21문단은 축제를 단순한 달력상의 날짜로 한정하지 않고, 회개·구제·환대·이웃 사랑이라는 윤리적 실천으로 규정한다. 동시에 오순절의 일곱 주간을 하나님을 기쁘시게 하는 행위로 축하하게 한다는 점에서 ‘전례적 시간’과 공동체적 실천의 결합을 보여 준다.</li></ol>
+    </main>
+  </div>
+
+  <footer class="footer">
+    Brakke–Gwynn의 영어 번역을 옮긴 연구용 한국어 번역입니다. 논문 직접 인용 시 영어 번역 및 원문 지면과 다시 대조하십시오.
+  </footer>
+
+  <script>
+    const progress = document.querySelector(".reading-progress");
+    const tocLinks = [...document.querySelectorAll(".toc-link")];
+    const sections = tocLinks
+      .map((link) => document.querySelector(link.getAttribute("href")))
+      .filter(Boolean);
+
+    function updateReadingState() {
+      const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+      const ratio = scrollable > 0 ? window.scrollY / scrollable : 0;
+      progress.style.width = Math.min(100, Math.max(0, ratio * 100)) + "%";
+
+      let active = sections[0];
+      for (const section of sections) {
+        if (section.getBoundingClientRect().top <= 120) active = section;
+      }
+      tocLinks.forEach((link) => {
+        link.classList.toggle("active", active && link.getAttribute("href") === "#" + active.id);
+      });
+    }
+
+    window.addEventListener("scroll", updateReadingState, { passive: true });
+    updateReadingState();
+  </script>
+</body>
+</html>
